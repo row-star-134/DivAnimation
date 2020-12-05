@@ -1,0 +1,77 @@
+<html>
+<style>
+.c1{
+
+box-shadow:16px 16px lightblue;
+
+
+
+}
+.c2
+{
+background:brown;
+}
+</style>
+<script>
+var i=10;
+var j=10;
+var k=10;
+var l=10;
+function f()
+{   
+    
+    if(i<=370)
+     { 
+     t2.style.marginLeft=i+"px";
+	 t2.style.marginTop=i+"px";
+	 t2.style.backgroundColor="red";
+     setTimeout("f()",0.1);
+	 
+	 i++;
+	 }
+	else if(j<= 370)
+	 {
+	 t2.style.marginTop=(370-j)+"px";
+	 t2.style.marginLeft=370;
+	 t2.style.backgroundColor="blue";
+	 setTimeout("f()",0.1);
+	 j++;
+	 }
+	 else if(k<=370)
+	 { 
+	 t2.style.marginLeft=(370-k)+"px";
+	 t2.style.marginTop=k+"px";
+	 t2.style.backgroundColor="yellow";
+	 setTimeout("f()",0.1);
+	 k++;
+	 }
+	 else if(l<=370)
+	 {
+	 t2.style.marginTop=(370-l)+"px";
+	 t2.style.marginLeft=0+"px";
+	 t2.style.backgroundColor="pink";
+	 setTimeout("f()",0.1);
+	 l++;
+	 }
+	 
+else
+{
+ i=0;
+ j=0;
+ k=0;
+ l=0;
+setTimeout("f()",0.1);
+}
+}
+
+</script>
+<body onload="f()">
+<div class="c2" style="height:500px;width:500px;border:1px solid black"id="t1">
+
+
+<div  class="c1" style="height:100px;width:100px;border-radius:50%;" id="t2" >
+</div>
+
+
+</body>
+</html>
